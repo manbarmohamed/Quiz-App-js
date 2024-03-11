@@ -67,7 +67,10 @@ En tant que développeur front-end freelance, votre client est une petite entrep
 
 ## Comment exécuter le projet
 
-[Expliquez ici comment cloner, installer les dépendances et exécuter le projet.]
+Assurez-vous d'avoir une version récente de Java installée.
+Clonez ce dépôt : https://github.com/manbarmohamed/Quiz-App-js.git
+Naviguez vers le répertoire du projet : cd brf3-Quiz
+Exécutez l'application : index.html
 
 ## Auteurs
 Ce projet a été développé par [Manbar Mohamed], sous la supervision de l'école ENAA Béni Mellal.
