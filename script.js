@@ -4,7 +4,7 @@ let Questions=[
         answer:[
             "Fes",
             "CasaBlanca",
-            "Algirie",
+            "Algerie",
             "Rabat",
         ],
         corect:"Rabat"
@@ -40,6 +40,16 @@ let Questions=[
         corect:"Roma"
     },
 ]
+let j=0
+let next_btn= document.getElementById('next-btn')
+function show(){
+    for(let i=0 ; i<Questions[j].answer.length; i++){
+        let qst= document.getElementById('Question');
 
-let btn= document.getElementById('b1');
-
+        let btn= document.getElementsByClassName('answer');
+        qst.innerHTML=Questions[j].quetstion;
+        btn[i].innerHTML=Questions[j].answer[i]
+    } 
+    j++   
+}
+next_btn.onclick=show;
