@@ -40,3 +40,6 @@ let Questions=[
         corect:"Roma"
     },
 ]
+
+let btn= document.getElementById('b1');
+
