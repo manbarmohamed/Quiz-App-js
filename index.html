@@ -6,25 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
 </head>
 
-<body>
+<body onload="show()">
     <section class="container">
         <div>
-            <img src="imgs/logo.png" alt="" class="logo">
+            <img src="imgs/logo1.png" alt="" class="logo">
         </div>
         <div class="Quiz">
             <div class="QA">
-                <p id="Question">What is Capitale of Spain</p>
+                <p id="Question"></p>
                 <div id="answer-buttons">
-                    <button class="answer" id="b1">answer1</button>
-                    <button class="answer">answer2</button>
-                    <button class="answer">answer3</button>
-                    <button class="answer">answer4</button>
                 </div>
                 <div class="btns">
-                    <p>1 of 5 Question</p>
-                    <button class="next" id="next-btn" >next</button>
+                    <p id="count">1 of 5 Question</p>
+                    <p class="next" id="next-score"></p>
                 </div>
             </div>
         </div>
