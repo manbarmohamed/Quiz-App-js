@@ -69,17 +69,20 @@ function Change(){
             answerbuttons.innerHTML=""
             qst.innerHTML=""
             if(this.innerHTML == Questions[i].corect){
-                score +=10;
+                score +=20;
                 nextscore.innerHTML=
                 `<p>Your Score is ${score} </p>`;
             }
             
             i++;
+            if(score>=40){
+                qst.innerHTML="congratulation"
+            }
+            else{
+                qst.innerHTML="You Lose!! try again"             
+            }
             getData();
-            Change();
-           
-    
-    
+            Change();    
         })
 
     }
