@@ -39,6 +39,7 @@ let Questions = [
         ],
         corect: "Roma"
     },
+    
 ]
 
 let score=0
@@ -53,21 +54,30 @@ let count=document.getElementById("count")
 let i=0
 
 function getData(){
-    for(let j=0;j<Questions[i].answer.length;j++){
+    if(i==Questions.length){
+        answerbuttons.innerHTML=
+        `<a href="" id="reload">Reload`
+    }else{
+        for(let j=0;j<Questions[i].answer.length;j++){
         qst.innerHTML=Questions[i].quetstion
-      answerbuttons.innerHTML +=
+        answerbuttons.innerHTML +=
         `<button class="answer" id="b1">${Questions[i].answer[j]}</button>`
     }
     count.innerHTML= `<p>${i + 1}  of ${Questions.length} Questions </p>`;
-
+    }
+    
+    
+    
 }
+
+
 getData();
 
 function Change(){
     document.querySelectorAll(".answer").forEach((e)=>{
         e.addEventListener("click",function(){
-            answerbuttons.innerHTML=""
-            qst.innerHTML=""
+                answerbuttons.innerHTML=""
+                qst.innerHTML=""
             if(this.innerHTML == Questions[i].corect){
                 score +=20;
                 nextscore.innerHTML=
@@ -82,11 +92,10 @@ function Change(){
                 qst.innerHTML="You Lose!! try again"             
             }
             getData();
-            Change();    
+            Change();             
         })
 
-    }
-   )
+    })
 }
 Change();
 

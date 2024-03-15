@@ -100,42 +100,16 @@
     background-color: #fffc42;
 }
 
+#reload{
+    
+    background-color: #fcfcfb;
+    padding: 7px;
+    /* margin-left: 15px; */
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    font-weight: bold;
+    color:black;
+
+}
+
 /* MEDIA QUERY FOR SMARTPHONE */
-@media only screen and (max-width: 768px) {
-    .QA {
-        width: auto;
-    }
-    #Question {
-        width: auto;
-    }
-    #answer-buttons{
-        width: auto;
-    }
-    .answer {
-        width: 8rem;
-        padding: 5px;
-        font-weight: 300;
-    }
-    .btns {
-        width: 80%;
-    }
-}
-
-/* MEDIA QUERY FOR TABLET */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        /* Adjust container styles for tablet screens */
-    }
-
-    #Question {
-        /* Adjust question styles for tablet screens */
-    }
-
-    .answer {
-        /* Adjust answer styles for tablet screens */
-    }
-
-    .btns {
-        /* Adjust button container styles for tablet screens */
-    }
-}
