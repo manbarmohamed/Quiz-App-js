@@ -140,9 +140,12 @@ function Change() {
             console.log(mid);
             if (score >= mid) {
                 qst.innerHTML = "congratulation"
+                nextscore.style.backgroundColor = "#74E291";
+
             }
             else {
                 qst.innerHTML = "You Lose!! try again"
+                nextscore.style.backgroundColor = "red";
             }
             getData();
             Change();
